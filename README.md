@@ -4,7 +4,7 @@ C# solutions to the [Advent of Code](https://adventofcode.com) problems.
 This is a repository template to be used as a baseline in your own 'adventures'.
 It's a batteries included framework that can download your inputs, scaffold a solution template, 
 send in and validate your answers, generate svg versions of your calendar as you progress etc.
-I've been using this since 2015 with great success.
+I've been using this since 2015 with [great success](https://github.com/encse/adventofcode).
 
 Due to copyright requirements I'm not allowed to include input files and problem descriptions
 within this repository. 
