@@ -6,7 +6,7 @@ It's a batteries included framework that can download your inputs, scaffold a so
 send in and validate your answers, generate svg versions of your calendar as you progress etc.
 I've been using this since 2015 with [great success](https://github.com/encse/adventofcode).
 
-Due to copyright requirements I'm not allowed to include input files and problem descriptions
+Due to copyright reasons I'm not allowed to include input files and problem descriptions
 within this repository. 
 
 However I wanted to have a self contained version for myself that I can keep around forever, 
