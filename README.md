@@ -12,7 +12,7 @@ within this repository.
 However I wanted to have a self contained version for myself that I can keep around forever, 
 so I decided to commit the encrypted version of the input files. It doesn't violate the 
 copyright since it's just random garbage for everyone else but when I check it out, a plugin 
-called `git-crypt` decrypts all my inputs transparently, so I can work with them uninterrupted.
+called `git-crypt` decrypts all my inputs transparently, so that I can work with them uninterrupted.
  
 On commit the whole process is reversed and the files get encrypted again.
 
