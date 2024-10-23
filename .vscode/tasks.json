@@ -1,0 +1,178 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/adventofcode.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+
+        {
+            "label": "run",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "${input:year}/${input:day}"
+            ],
+            "problemMatcher": [],
+            "dependsOn": [
+                "build"
+            ]
+        },
+
+        {
+            "label": "run today",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "today"
+            ],
+            "problemMatcher": [],
+            "dependsOn": [
+                "build"
+            ]
+        },
+
+        {
+            "label": "upload",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "upload",
+                "${input:year}/${input:day}",
+            ],
+            "options": {
+                "env": {
+                    "SESSION": "${input:session}"
+                }
+            },
+            "problemMatcher": [],
+        },
+        
+        {
+            "label": "upload today",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "upload",
+                "today",
+            ],
+            "options": {
+                "env": {
+                    "SESSION": "${input:session}"
+                }
+            },
+            "problemMatcher": [],
+        },
+
+        {
+            "label": "update",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "update",
+                "${input:year}/${input:day}"
+            ],
+            "options": {
+                "env": {
+                    "SESSION": "${input:session}"
+                }
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "update today",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "update",
+                "today"
+            ],
+            "options": {
+                "env": {
+                    "SESSION": "${input:session}"
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/adventofcode.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/adventofcode.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        
+    ],
+    "inputs": [
+        {
+            "id": "year",
+            "type": "command",
+            "command": "memento.promptString",
+            "args": {
+                "id": "year",
+                "description": "Current year (YYYY)"
+            }
+        },
+        {
+            "id": "part",
+            "type": "command",
+            "command": "memento.pickString",
+            "args": {
+                "id": "part",
+                "options": ["1", "2"],
+                "description": "Part of the day"
+            }
+        },
+        {
+            "id": "day",
+            "type": "command",
+            "command": "memento.pickString",
+            "args": {
+                "id": "day",
+                "options": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"],
+                "description": "Current day"
+            }
+        },
+        {
+            "id": "answer",
+            "type": "promptString",
+            "description": "Answer for the part day"
+        },
+        {
+            "id": "session",
+            "type": "command",
+            "command": "memento.promptString",
+            "args": {
+                "id": "session",
+                "description": "Session cookie"
+            }
+        }
+    ]
+}
