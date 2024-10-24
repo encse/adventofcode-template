@@ -11,8 +11,7 @@ It's not a command line tool, but rather a batteries included framework. You get
 - online answer validation
 - regression tests
 - speed tests
-- calendar in ANSI colors
-- calendar is SVG format
+- calendar in ANSI colors for the terminal, as well as an SVG version
 - source lines of code (sloc) chart
 - an OCR for elf fonts.
 
