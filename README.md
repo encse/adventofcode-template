@@ -9,7 +9,7 @@ It's not a command line tool, but rather a batteries included framework. You get
 - online answer validation
 - regression tests
 - speed tests
-- calendar in ANSI colors for the terminal, as well as an SVG version
+- up to date calendar in ANSI colors for the terminal, as well as an SVG version for your README.md
 - source lines of code (sloc) chart
 - an OCR for elf fonts.
 
