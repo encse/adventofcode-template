@@ -35,7 +35,7 @@ If you find this project useful, please [support](https://github.com/sponsors/en
 - `git-crypt` to store the input files in an encrypted form
 - the optional `Memento Inputs` extension for Visual Studio Code
 
-## Getting started
+## Getting started in 5 steps
 
 1. Clone the repo
 2. Install .NET Core
@@ -48,7 +48,7 @@ If you find this project useful, please [support](https://github.com/sponsors/en
 > git-crypt export-key ~/aoc-crypt.key
 ```
 
-4. Don't commit `aoc-crypt.key` into a public repo, back it up in some protected place. 
+Don't commit `aoc-crypt.key` into a public repo, back it up in some protected place. 
 If you need to clone your repo later you will need to unlock it using this key such as:
 
 ```
@@ -56,6 +56,8 @@ If you need to clone your repo later you will need to unlock it using this key s
 > cd repo-dir
 > git-crypt unlock ~/aoc-crypt.key
 ```
+4. export your SESSION cookie from adventofcode.com site in your terminal as an env variable:
+> export SESSION=djsaksjakshkja...
 
 5. Get help with `dotnet run` and start coding.
 
