@@ -2,19 +2,19 @@
 C# solutions to the [Advent of Code](https://adventofcode.com) problems.
 
 This is a repository template to be used as a baseline in your own 'adventures'.
-It's a batteries included framework that I've been using this since 2015 with [great success](https://github.com/encse/adventofcode). 
+It's a batteries included framework that I've been using since 2015 with [great success](https://github.com/encse/adventofcode). 
 
 You get:
 
-- quick input download
+- input download from the commmand line
 - solution skeleton generator
-- validate your answer online
-- regression test
-- speed test
-- calendar in ansi colors in your terminal
-- calendar is svg
-- sloc chart (number of lines per solution)
-- ocr for elf fonts
+- online answer validation
+- regression tests
+- speed tests
+- calendar in ANSI colors
+- calendar is SVG format
+- source lines of code (sloc) chart
+- an OCR for elf fonts.
 
 Due to copyright reasons I'm not allowed to include input files and problem descriptions
 within this repository. 
