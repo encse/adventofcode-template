@@ -1,7 +1,5 @@
 # Advent of Code
-C# solutions to the [Advent of Code](https://adventofcode.com) problems.
-
-This is a repository template to be used as a baseline in your own 'adventures'. I've been using since 2015
+This is a C# repository template for your [Advent of Code](https://adventofcode.com) solutions. I've been using this since 2015
 with [great success](https://github.com/encse/adventofcode). 
 
 It's not a command line tool, but rather a batteries included framework. You get:
