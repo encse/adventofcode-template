@@ -1,13 +1,13 @@
 # Advent of Code
 C# solutions to the [Advent of Code](https://adventofcode.com) problems.
 
-This is a repository template to be used as a baseline in your own 'adventures'.
-It's a batteries included framework that I've been using since 2015 with [great success](https://github.com/encse/adventofcode). 
+This is a repository template to be used as a baseline in your own 'adventures'. I've been using since 2015
+with [great success](https://github.com/encse/adventofcode). 
 
-You get:
+It's not a command line tool, but rather a batteries included framework. You get:
 
 - input download from the commmand line
-- solution skeleton generator
+- a solution skeleton generator
 - online answer validation
 - regression tests
 - speed tests
