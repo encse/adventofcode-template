@@ -53,7 +53,7 @@ If you need to clone your repo later you will need to unlock it using this key s
 > cd repo-dir
 > git-crypt unlock ~/aoc-crypt.key
 ```
-4. export your SESSION cookie from adventofcode.com site in your terminal as an env variable:z
+4. export your SESSION cookie from the adventofcode.com site in your terminal as an env variable:
 
 ```
 > export SESSION=djsaksjakshkja...
