@@ -2,7 +2,7 @@
 This is a C# repository template for your [Advent of Code](https://adventofcode.com) solutions. I've been using this since 2015
 with [great success](https://github.com/encse/adventofcode). 
 
-It's not a command line tool, but rather a batteries included framework that does the heavy lifting for you. While you focus on solving the problems it provides you:
+It's not a command line tool, but rather a batteries included framework that does the heavy lifting. While you focus on solving the problems it provides:
 
 - input download
 - a solution skeleton generator
