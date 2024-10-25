@@ -35,7 +35,7 @@ If you find this project useful, please [support](https://github.com/sponsors/en
 ## Getting started in 5 steps
 
 1. Clone the repo
-2. Install .NET Core
+2. Install .NET
 3. Install and initialize git-crypt:
 
 ```
