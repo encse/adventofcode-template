@@ -27,7 +27,7 @@ If you find this project useful, please [support](https://github.com/sponsors/en
 
 ## Dependencies
 
-- Based on `.NET 8` and `C# 12` 
+- Based on `.NET 9` and `C# 13` 
 - `AngleSharp` is used for problem download
 - `git-crypt` to store the input files in an encrypted form
 - the optional `Memento Inputs` extension for Visual Studio Code
