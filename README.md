@@ -23,8 +23,6 @@ called `git-crypt` decrypts all my inputs transparently, so that I can work with
  
 On commit the whole process is reversed and the files get encrypted again.
 
-If you find this project useful, please [support](https://github.com/sponsors/encse) me.
-
 ## Dependencies
 
 - Based on `.NET 9` and `C# 13` 
