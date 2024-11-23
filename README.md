@@ -2,6 +2,8 @@
 This is a C# repository template for your [Advent of Code](https://adventofcode.com) solutions. I've been using this since 2015
 with [great success](https://github.com/encse/adventofcode). 
 
+![](demo.gif)
+
 It's not a command line tool, but rather a batteries included framework that does the heavy lifting. While you focus on solving the problems it provides:
 
 - input download
