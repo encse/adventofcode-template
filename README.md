@@ -16,10 +16,8 @@ It's not a command line tool, but rather a batteries included framework that doe
 - an OCR for elf fonts.
 
 Due to copyright reasons I'm not allowed to include input files and problem descriptions
-within this repository. 
-
-However I wanted to have a self contained version for myself that I can keep around forever, 
-so I decided to commit the encrypted version of the input files. It doesn't violate the 
+within this repository. But I wanted to have a self contained version for myself that I can keep around forever, 
+so decided to commit the encrypted version of the input files. It doesn't violate the 
 copyright since it's just random garbage for everyone else but when I check it out, a plugin 
 called `git-crypt` decrypts all my inputs transparently, so that I can work with them uninterrupted.
  
