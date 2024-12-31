@@ -12,11 +12,15 @@ class SlocChart {
             return;
         }
 
-        Console.WriteLine($"  {year } in code lines");
-        Console.WriteLine("");
 
         var chars = "█▁▂▃▄▅▆▇";
-        var max = slocs.Select(sloc => sloc.sloc).Max();
+        var max = slocs.Max(sloc => sloc.sloc);
+        var min = slocs.Min(sloc => sloc.sloc);
+        var total = slocs.Sum(sloc => sloc.sloc);
+
+        Console.WriteLine($"  {year } in code lines                           total: {total} max: {max} min: {min}");
+        Console.WriteLine("");
+
 
         var columns = new List<List<ColoredString>>();
 
@@ -68,15 +72,12 @@ class SlocChart {
             rows.Insert(0, row);
         }
 
-        var c = Console.ForegroundColor;
         foreach (var row in rows) {
             foreach (var item in row) {
-                Console.ForegroundColor = item.c;
-                Console.Write(item.st);
+                Terminal.Write(item.c, item.st);
             }
             Console.WriteLine();
         }
-        Console.ForegroundColor = c;
         Console.WriteLine("");
     }
 }
