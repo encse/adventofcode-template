@@ -1,10 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <LangVersion>13</LangVersion>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>14</LangVersion>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-    <UseAppHost>false</UseAppHost>
+    <SelfContained>true</SelfContained>
+    <!-- <UseAppHost>true</UseAppHost>  -->
+    <EnableDynamicCodeSupport>true</EnableDynamicCodeSupport>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AngleSharp" Version="0.14.0" />

@@ -25,7 +25,7 @@ On commit the whole process is reversed and the files get encrypted again.
 
 ## Dependencies
 
-- Based on `.NET 9` and `C# 13` 
+- Based on `.NET 10` and `C# 14` 
 - `AngleSharp` is used for problem download
 - `git-crypt` to store the input files in an encrypted form
 - the optional `Memento Inputs` extension for Visual Studio Code

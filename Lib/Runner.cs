@@ -109,7 +109,6 @@ class Runner {
         var indent = "    ";
         Write(ConsoleColor.White, $"{indent}{solver.DayName()}: {solver.GetName()}");
         WriteLine();
-        var dir = workingDir;
         var file = Path.Combine(workingDir, "input.in");
         var refoutFile = file.Replace(".in", ".refout");
         var refout = File.Exists(refoutFile) ? File.ReadAllLines(refoutFile) : null;
@@ -152,13 +151,6 @@ class Runner {
 
     public static void RunAll(bool executeSolvers, bool showSplashScreen, bool showLocChart, params Solver[] solvers) {
 
-        if (solvers.Length == 0) {
-            WriteLine(ConsoleColor.Yellow, "No solvers found. To start writing one, use");
-            WriteLine(ConsoleColor.Yellow, "> dotnet run update 20xx/xx");
-            WriteLine();
-            return;
-        }
-
         var errors = new List<string>();
 
         var lastYear = -1;
@@ -191,7 +183,6 @@ class Runner {
         if (errors.Any()) {
             WriteLine(ConsoleColor.Red, "Errors:\n" + string.Join("\n", errors));
         }
-
 
         WriteLine(ConsoleColor.Yellow, "Please support the maintainer: https://github.com/sponsors/encse");
         WriteLine();
